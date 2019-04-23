@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Listagem de Exercícios</title>
+    <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="q1.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Exercícios</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Exercicio Formulário<span class="sr-only">(atual)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="starter-template">
+            <h1>Formulário</h1>
+            <p class="lead">Pega minha edição:</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Formulário</h5>
+                        <p class="card-text"></p>
+                        <form id="frmExercicio">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Nome:</label>
+                                <input type="text" class="form-control" id="nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Data de Nascimento:</label>
+                                <input type="text" class="form-control" id="dataNasc">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Sexo:</label><br>
+                                <input type="radio" name="gender" value="male"> Male<br>
+                                <input type="radio" name="gender" value="female"> Female<br>
+                                <input type="radio" name="gender" value="other"> Other
+                            </div>
+
+                            <fieldset>
+                                <legend>Endereço</legend>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Logradouro:</label>
+                                    <input type="text" class="form-control" id=rua>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Bairro:</label>
+                                    <input type="text" class="form-control" id=bairro>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">CEP:</label>
+                                    <input type="text" class="form-control" id=cep>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Estado:</label><br>
+                                    <select id="estados">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Cidade:</label><br>
+                                    <select id="cidades">
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Complemento(Tipo):</label><br>
+                                    <select name="tipoRes">
+                                        <option value="select">Selecione...</option>
+                                        <option value="casa">Casa</option>
+                                        <option value="ap">Apartamento</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Número:</label>
+                                    <input type="text" class="form-control" id=numCasa>
+                                </div>
+
+                            </fieldset>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Escolaridade:</label><br>
+                                <select name="escolar">
+                                    <option value="fundamental">Ensino Fundamental</option>
+                                    <option value="medio">Ensino Médio</option>
+                                    <option value="superior">Ensino Superior</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Profissão:</label><br>
+                                <select name="profissao">
+                                    <option value="backend">Programador Back-end</option>
+                                    <option value="frontend">Programador Front-end</option>
+                                    <option value="analista">Analista de Sistemas</option>
+                                    <option value="fullstack">Programador Fullstack</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Cpf:</label>
+                                <input type="text" class="form-control" id="cpf">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">RG:</label>
+                                <input type="text" class="form-control" id="rg">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Telefone:</label>
+                                <input type="text" class="form-control" id="fone">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Celular(opcional):</label>
+                                <input type="text" class="form-control" id="celular">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Renda Mensal:</label>
+                                <input type="text" class="form-control" id="renda">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Áreas de Interesse:</label><br>
+                                <input type="checkbox" name="informatica" value="informatica"> Informática<br>
+                                <input type="checkbox" name="adm" value="adm"> Administração<br>
+                                <input type="checkbox" name="economia" value="economia"> Ecônomia<br>
+                                <input type="checkbox" name="juridico" value="juridico"> Jurídico<br>
+                            </div>
+                            <input id="btnSubmit" type="button" class="btn btn-outline-success my-2 my-sm-0"
+                                value="Submit" onclick="validarOperacao()" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright
+            <a href="https://www.cesusc.edu.br/" target="_blank">Faculdade CESUSC</a>
+        </div>
+    </footer>
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	<script src="q1.js"></script>
+</body>
+
+</html>
